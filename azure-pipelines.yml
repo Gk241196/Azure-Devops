@@ -4,6 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 trigger:
+- task: CopyFiles@2
+  inputs:
+    Contents: '**/*war'''
+    TargetFolder: 
 - master
 
 pool:
