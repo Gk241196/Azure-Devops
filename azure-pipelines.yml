@@ -8,6 +8,11 @@ trigger:
   inputs:
     Contents: '**/*war'''
     TargetFolder: D:\Automation 2023\chromedriver_win32
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 - master
 
 pool:
