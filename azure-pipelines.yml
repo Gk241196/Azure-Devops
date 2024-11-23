@@ -7,7 +7,7 @@ trigger:
 - task: CopyFiles@2
   inputs:
     Contents: '**/*war'''
-    TargetFolder: 
+    TargetFolder: D:\Automation 2023\chromedriver_win32
 - master
 
 pool:
